@@ -22,6 +22,8 @@ Create a user named **john** with a **non-interactive shell** on **App Server 1*
     ```bash
     sudo useradd -s /usr/sbin/nologin john
     ```
+    <img width="642" height="292" alt="image" src="https://github.com/user-attachments/assets/8f29a361-53cf-4ebd-9023-eb5735da002f" />
+
 
     > If `/usr/sbin/nologin` is not available on the server, use `/sbin/nologin` instead.
 3.  Verify that the user has been created successfully:
@@ -29,12 +31,15 @@ Create a user named **john** with a **non-interactive shell** on **App Server 1*
     ```bash
     id john
     ```
+    
 4.  Confirm that the assigned shell is non-interactive:
 
     ```bash
     grep '^john:' /etc/passwd
     ```
 5. Verify that the shell is set to `/usr/sbin/nologin` (or `/sbin/nologin`).
+   <img width="647" height="366" alt="image" src="https://github.com/user-attachments/assets/2311bbd5-5912-4e59-8322-6210e860d9d7" />
+
 
 The user **john** has now been created with a non-interactive shell on **App Server 1**.
 
