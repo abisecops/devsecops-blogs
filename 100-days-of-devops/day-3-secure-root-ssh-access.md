@@ -1,4 +1,5 @@
 Day 2: Temporary User Setup with Expiry
+
 Tasks
 Log in to App Server 1 (Stratos Datacenter)
 
