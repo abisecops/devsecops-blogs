@@ -21,10 +21,10 @@
 | 3   | Secure Root SSH Access Configuration on Linux Server      | [Day 3](day-3-secure-root-ssh-access.md)                        |
 | 4   | Script Execution Permissions Management in Linux          | [Day 4](day-4-script-execution-permissions.md)                  |
 | 5   | SELinux Installation and Configuration on Linux Systems   | [Day 5](day-5-selinux-installation-and-configuration.md)        |
-| 6   | Create and Manage Cron Jobs in Linux                      | [Day 6](day-6-create-a-cron-job.md)                             |
-| 7   | Linux SSH Authentication Setup and Configuration          | [Day 7](day-7-linux-ssh-authentication.md)                      |
-| 9   | MariaDB Database Troubleshooting in Linux Environment     | [Day 9](day-9-mariadb-troubleshooting.md)                       |
-| 10  | Linux Bash Scripting for Automation Tasks                 | [Day 10](day-10-linux-bash-scripts.md)                          |
+| 6   | Create and Manage Cron Jobs in Linux                      | Day 6                                                           |
+| 7   | Linux SSH Authentication Setup and Configuration          | Day 7                                                           |
+| 9   | MariaDB Database Troubleshooting in Linux Environment     | Day 9                                                           |
+| 10  | Linux Bash Scripting for Automation Tasks                 | Day 10                                                          |
 | 11  | Install and Configure Apache Tomcat Server on Linux       | [Day 11](day-11-install-and-configure-tomcat-server.md)         |
 | 12  | Linux Network Services Configuration and Management       | [Day 12](day-12-linux-network-services.md)                      |
 | 13  | IPtables Firewall Installation and Configuration in Linux | [Day 13](day-13-iptables-installation-and-configuration.md)     |
