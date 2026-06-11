@@ -8,7 +8,7 @@ cd mkdir learn-terraform-docker-container
 sudo nano main.tf
 ```
 
-#### Let's create a terraform file to create the docker image of jenkins: 
+#### Let's create a terraform file to create the docker image of jenkins: <br>
 
 ```bash
 sudo nano main.tf
@@ -73,8 +73,7 @@ terraform apply
 
 <figure><img src="../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
 
-* Prompt **yes** only your configuration is correct: \
-
+* Prompt **yes** only your configuration is correct: <br>
 
 <figure><img src="../.gitbook/assets/image (92).png" alt=""><figcaption></figcaption></figure>
 

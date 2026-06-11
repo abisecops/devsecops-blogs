@@ -2,9 +2,9 @@
 
 ### Table of contents
 
-* [Introduction](broken-reference)
-* [Tasks](broken-reference)
-* [Steps](broken-reference)
+* [Introduction](/broken/pages/LsqF5pBszmp3CoN9AXjD)
+* [Tasks](/broken/pages/LsqF5pBszmp3CoN9AXjD)
+* [Steps](/broken/pages/LsqF5pBszmp3CoN9AXjD)
 
 #### Introduction <a href="#heading-introduction" id="heading-introduction"></a>
 

@@ -3,6 +3,27 @@ icon: handshake
 cover: >-
   https://imgs.search.brave.com/ydRrDXwikdaRCxq7XTy1q6Pz5gZe47kEmwwjs7UYmhI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jb21t/dW5pdHkuc3BsdW5r/LmNvbS9odG1sL2Fz/c2V0cy9zcGx1bmst/bG9nby5zdmc
 coverY: 0
+layout:
+  width: default
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # Introduction

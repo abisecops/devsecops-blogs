@@ -1,6 +1,9 @@
 # Table of contents
 
 * [Intro](README.md)
+* [100 Days of DevOps](100-days-of-devops/README.md)
+  * [Day 1: Linux User Setup with Non-Interactive Shell](100-days-of-devops/day-1-linux-user-setup-with-non-interactive-shell.md)
+  * [Day 2: Temporary User Setup with Expiry](100-days-of-devops/day-2-temporary-user-setup-with-expiry.md)
 * [Git](git/README.md)
   * [Set Up Git Repository on Storage Server](git/set-up-git-repository-on-storage-server.md)
   * [Clone Git Repository on Storage Server](git/clone-git-repository-on-storage-server.md)
@@ -25,7 +28,6 @@
   * [Troubleshoot](git/troubleshoot/README.md)
     * [Auto-merge in github](git/troubleshoot/auto-merge-in-github.md)
     * [Basic Recon with github actions](git/troubleshoot/basic-recon-with-github-actions.md)
-  * [100 Days of DevOps](git/100-days-of-devops.md)
 * [Linux](linux/README.md)
   * [Package in linux](linux/package-in-linux.md)
   * [ICMP vulnerability:](linux/icmp-vulnerability.md)

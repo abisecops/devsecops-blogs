@@ -2,9 +2,30 @@
 description: Today I have to install and config dotnet runtime 7.0.2 in ubuntu server
 cover: ../../.gitbook/assets/image (170).png
 coverY: 0
+layout:
+  width: default
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
-# Dotnet runtime:  7.0.2
+# Dotnet runtime: 7.0.2
 
 **NET is made up of the runtime and the SDK. The runtime is used to run a .NET app and might be included with the app. The SDK is used to create .NET apps and libraries. The .NET runtime is always installed with the SDK.**
 

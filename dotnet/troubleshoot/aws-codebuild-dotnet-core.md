@@ -3,6 +3,27 @@ description: Build and test code with elastic scaling. Pay only for the build ti
 cover: >-
   https://d2908q01vomqb2.cloudfront.net/7719a1c782a1ba91c031a682a0a2f8658209adbf/2023/01/03/devops_2213_FIM-1120x630.png
 coverY: 0
+layout:
+  width: default
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # AWS CodeBuild DotNet Core

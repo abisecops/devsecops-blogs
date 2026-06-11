@@ -35,7 +35,7 @@ sudo service solr start
 sudo service solr status
 ```
 
-3. By default the port of Solr is 8983. Try : [http://localhost:8983/](https://localhost:8983/)
+3. By default the port of Solr is 8983. Try : [http://localhost:8983/](localhost:8983/)
 
 If we are using localhost and wanna try to port mapping to public try ngrok. Let's do it.&#x20;
 
@@ -69,7 +69,6 @@ ngrok http 8983
 
 Now you will get your public url: \
 [https://8276-20-172-46-65.ngrok-free.app](https://8276-20-172-46-65.ngrok-free.app)\
-\
-
+<br>
 
 <figure><img src="../../.gitbook/assets/image (180).png" alt=""><figcaption></figcaption></figure>

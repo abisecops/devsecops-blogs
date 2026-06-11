@@ -2,8 +2,8 @@
 
 ### Table of contents
 
-* [Tasks](broken-reference)
-* [Steps](broken-reference)
+* [Tasks](/broken/pages/tPbYezmEbPDgfvvzLImH)
+* [Steps](/broken/pages/tPbYezmEbPDgfvvzLImH)
 
 #### Tasks <a href="#heading-tasks" id="heading-tasks"></a>
 

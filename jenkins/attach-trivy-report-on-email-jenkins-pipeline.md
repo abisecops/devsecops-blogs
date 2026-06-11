@@ -4,6 +4,27 @@ description: >-
   build on jenkins pipeline to send on mail recipient.
 cover: ../.gitbook/assets/image (116).png
 coverY: 0
+layout:
+  width: default
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # Attach trivy report on email (jenkins pipeline)
@@ -18,7 +39,7 @@ curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/master/contrib/in
 
 2.  Follow the path:&#x20;
 
-    [Dashboard](http://localhost:8080/) ->  [All](http://localhost:8080/view/all/) -> [Pipeline](https://localhost:8080)&#x20;
+    [Dashboard](http://localhost:8080/) ->  [All](http://localhost:8080/view/all/) -> [Pipeline](localhost:8080)&#x20;
 3. Pipeline script:&#x20;
 
 ```groovy

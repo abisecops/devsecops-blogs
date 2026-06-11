@@ -2,6 +2,27 @@
 description: dev -> main
 cover: ../../.gitbook/assets/image (173).png
 coverY: -41.37142857142858
+layout:
+  width: default
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # Auto-merge in github

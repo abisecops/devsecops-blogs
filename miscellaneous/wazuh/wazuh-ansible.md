@@ -61,6 +61,5 @@ sudo yum install ansible -y
 ansible --version
 ```
 
-\
-
+<br>
 

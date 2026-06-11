@@ -26,8 +26,7 @@ Then,  create the solr core again:&#x20;
 
 <figure><img src="../../.gitbook/assets/image (187).png" alt=""><figcaption></figcaption></figure>
 
-In case, you got any error check on the logs: \
-
+In case, you got any error check on the logs: <br>
 
 ```bash
 cd /var/solr

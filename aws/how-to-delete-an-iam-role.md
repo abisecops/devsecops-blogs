@@ -8,7 +8,7 @@
 
 [Abishek Kafle](https://hashnode.com/@abisec)
 
-·[Oct 8, 2024](broken-reference)·
+·[Oct 8, 2024](/broken/pages/AfaS1YX9TP30XMs8F66l)·
 
 1 min read
 
