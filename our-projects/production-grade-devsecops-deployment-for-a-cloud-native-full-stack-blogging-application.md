@@ -241,19 +241,15 @@ ssh -i my-key.pem ubuntu@<PUBLIC-IP>
 
 For your DevOps project, you can use:
 
-```
-                    AWS VPC
-                       |
-          +------------+------------+
-          |                         |
-   Nexus Server               SonarQube Server
-   t2.medium                  t2.medium
-   Port 8081                  Port 9000
-          |                         |
-          +------------+------------+
-                       |
-                  Jenkins Server
-                  (if deployed separately)
+```mermaid
+flowchart TB
+    VPC["AWS VPC"]
+
+    VPC --> N["Nexus Server - t2.medium - Port 8081"]
+    VPC --> S["SonarQube Server - t2.medium - Port 9000"]
+
+    N --> J["Jenkins Server - if deployed separately"]
+    S --> J
 ```
 
 **Important:** Nexus and SonarQube can consume significant RAM. `t2.medium` has only **4 GiB RAM**, so monitor memory usage and consider a larger instance if you encounter Java out-of-memory or performance issues.
