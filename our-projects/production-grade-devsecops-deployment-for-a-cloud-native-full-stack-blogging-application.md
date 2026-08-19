@@ -175,6 +175,8 @@ For the application services, open only the ports actually required, for example
 
 Ideally, restrict **8081** and **9000** to your trusted IP/network rather than opening them to `0.0.0.0/0`.
 
+
+
 #### f. Configure Storage
 
 Set the root EBS volume to at least:
@@ -235,21 +237,6 @@ Then connect again:
 
 ```bash
 ssh -i my-key.pem ubuntu@<PUBLIC-IP>
-```
-
-#### Recommended architecture
-
-For this DevOps project, we can use:
-
-```mermaid
-flowchart TB
-    VPC["AWS VPC"]
-
-    VPC --> N["Nexus Server - t2.medium - Port 8081"]
-    VPC --> S["SonarQube Server - t2.medium - Port 9000"]
-
-    N --> J["Jenkins Server - if deployed separately"]
-    S --> J
 ```
 
 **Important:** Nexus and SonarQube can consume significant RAM. `t2.medium` has only **4 GiB RAM**, so monitor memory usage and consider a larger instance if you encounter Java out-of-memory or performance issues.
