@@ -85,7 +85,7 @@ First, create a GitHub repository for the application. For production, it is rec
 
 > For this project, I am keeping it **public** so you can easily access the source code and follow along.
 
-**Repository:** [Full Stack Blogging App](https://github.com/ougabriel/full-stack-blogging-app?utm_source=chatgpt.com)
+**Repository:** [Full Stack Blogging App](https://github.com/ougabriel/full-stack-blogging-app)
 
 #### b. Create a Security Token
 
