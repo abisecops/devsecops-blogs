@@ -239,7 +239,7 @@ ssh -i my-key.pem ubuntu@<PUBLIC-IP>
 
 #### Recommended architecture
 
-For your DevOps project, you can use:
+For this DevOps project, we can use:
 
 ```mermaid
 flowchart TB
