@@ -7,8 +7,6 @@ description: >-
 
 # Production Grade DevSecOps Deployment for a Cloud Native Full Stack Blogging Application
 
-
-
 <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 ### Tech Stack Used in This Project
@@ -38,7 +36,7 @@ Before starting this project, you should have a basic understanding of the follo
 
 ### Table of Contents
 
-* #### **Step 1:** Set Up the Git Repository and Create a Security Token
+* **Step 1:** Set Up the Git Repository and Create a Security Token
 * **Step 2:** Set Up the Required Servers for Jenkins, SonarQube, Nexus and Monitoring
 * **Step 3:** Configure Jenkins, SonarQube and Nexus
 * **Step 4:** Install Jenkins Plugins and Configure Nexus, Trivy, SonarQube and DockerHub
@@ -47,3 +45,66 @@ Before starting this project, you should have a basic understanding of the follo
 * **Step 7:** Configure a Custom Domain for the Application
 * **Step 8:** Set Up Application Monitoring with Prometheus, Blackbox Exporter and Grafana
 
+This guide builds a secure delivery workflow from source control to Amazon EKS. It covers infrastructure provisioning, automated quality and security checks, container deployment, and production monitoring.
+
+#### Steps 1: Set Up the Git Repository and Create a Security Token
+
+#### a. Create the Git Repository
+
+First, create a GitHub repository for the application. For production, it is recommended to keep the repository **private** for better security.
+
+> For this project, I am keeping it **public** so you can easily access the source code and follow along.
+
+**Repository:** [Full Stack Blogging App](https://github.com/ougabriel/full-stack-blogging-app?utm_source=chatgpt.com)
+
+#### b. Create a Security Token
+
+Next, create a **GitHub Personal Access Token (PAT)** to securely authenticate with your repository. It allows tools like Jenkins to access GitHub without exposing your actual password.
+
+> **Tip:** Treat your token like a password and never share or commit it to your repository.
+
+#### c. Install Git Bash and Clone the Repository
+
+Install **Git Bash** on your local system. It makes it easy to manage the project, commit changes and push code to GitHub.
+
+You can download Git from [Git Official Guide](https://github.com/git-guides/install-git).
+
+Once Git Bash is installed, clone the project repository:
+
+```bash
+git clone https://github.com/ougabriel/full-stack-blogging-app.git
+```
+
+This will download the complete source code to your local system and prepare it for the next steps.
+
+#### Steps 1: Set Up the Git Repository and Create a Security Token
+
+#### a. Create the Git Repository
+
+First, create a GitHub repository for the application. For production, it is recommended to keep the repository **private** for better security.
+
+> For this project, I am keeping it **public** so you can easily access the source code and follow along.
+
+**Repository:** [Full Stack Blogging App](https://github.com/ougabriel/full-stack-blogging-app?utm_source=chatgpt.com)
+
+#### b. Create a Security Token
+
+Next, create a **GitHub Personal Access Token (PAT)** to securely authenticate with your repository. It allows tools like Jenkins to access GitHub without exposing your actual password.
+
+> **Tip:** Treat your token like a password and never share or commit it to your repository.
+
+#### c. Install Git Bash and Clone the Repository
+
+Install **Git Bash** on your local system. It makes it easy to manage the project, commit changes and push code to GitHub.
+
+You can download Git from [Git Official Guide](https://github.com/git-guides/install-git).
+
+Once Git Bash is installed, clone the project repository:
+
+```bash
+git clone https://github.com/ougabriel/full-stack-blogging-app.git
+```
+
+This will download the complete source code to your local system and prepare it for the next steps.
+
+<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
