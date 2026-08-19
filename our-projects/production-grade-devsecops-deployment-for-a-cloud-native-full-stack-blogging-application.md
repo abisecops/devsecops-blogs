@@ -107,4 +107,155 @@ git clone https://github.com/ougabriel/full-stack-blogging-app.git
 
 This will download the complete source code to your local system and prepare it for the next steps.
 
+
+
 <figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+
+### Step 2: Setup Required Servers  (Jenkins, SonarQube, Nexus & Monitoring Tools)
+
+In this step, we will deploy **two AWS EC2 instances** for **Nexus Repository** and **SonarQube**.
+
+#### a. Log in to AWS Console
+
+Log in to the AWS Management Console.
+
+#### b. Navigate to EC2
+
+In the AWS Console search bar, search for **EC2** and open the EC2 Dashboard.
+
+#### c. Launch an Instance
+
+Click **Launch instance**.
+
+#### d. Configure Instance Details
+
+Configure the instance as follows:
+
+* **Name:** `Nexus-Server`
+* **AMI:** Ubuntu Server
+* **Instance type:** `t2.medium`
+* **Key pair:** Select an existing key pair or create a new one.
+
+For the second server, use:
+
+* **Name:** `SonarQube-Server`
+* **AMI:** Ubuntu Server
+* **Instance type:** `t2.medium`
+
+> **Note:** Ubuntu 20.04 is now an older release. For a new deployment, use an Ubuntu LTS version supported by the software you're installing, unless your project specifically requires Ubuntu 20.04.
+
+#### e. Configure Network Settings
+
+Select your preferred:
+
+* **VPC**
+* **Subnet**
+* **Auto-assign Public IP:** Enable if you need direct Internet/SSH access.
+
+Configure the Security Group with only the required ports.
+
+For SSH:
+
+```
+SSH
+TCP
+22
+Source: My IP
+```
+
+**Do not use `2000–11000` as the SSH source range.** If you meant a port range, that is also unnecessary and insecure. SSH should normally be restricted to your own public IP or VPN/bastion network.
+
+For the application services, open only the ports actually required, for example:
+
+| Server    | Service          | Port |
+| --------- | ---------------- | ---: |
+| Nexus     | Nexus Repository | 8081 |
+| SonarQube | SonarQube Web UI | 9000 |
+| SSH       | SSH              |   22 |
+
+Ideally, restrict **8081** and **9000** to your trusted IP/network rather than opening them to `0.0.0.0/0`.
+
+#### f. Configure Storage
+
+Set the root EBS volume to at least:
+
+```
+20 GB
+```
+
+However, **20 GB may be insufficient for Nexus**, depending on how many artifacts/images you store. Nexus storage can grow quickly.
+
+#### g. Number of Instances
+
+You can either:
+
+* Launch **2 instances at once**, or
+* Launch them separately and give each a clear name.
+
+For example:
+
+```
+Nexus-Server
+SonarQube-Server
+```
+
+#### h. Launch Instances
+
+Review the configuration and click **Launch instance**.
+
+Wait until both instances show:
+
+```
+Instance state: Running
+```
+
+#### i. Connect to the Servers
+
+Once the instances are running, select an instance and copy its **Public IPv4 address**.
+
+Connect using SSH:
+
+```bash
+ssh -i your-key.pem ubuntu@<PUBLIC-IP>
+```
+
+For example:
+
+```bash
+ssh -i my-key.pem ubuntu@54.xx.xx.xx
+```
+
+Make sure your private key has the correct permissions:
+
+```bash
+chmod 400 my-key.pem
+```
+
+Then connect again:
+
+```bash
+ssh -i my-key.pem ubuntu@<PUBLIC-IP>
+```
+
+#### Recommended architecture
+
+For your DevOps project, you can use:
+
+```
+                    AWS VPC
+                       |
+          +------------+------------+
+          |                         |
+   Nexus Server               SonarQube Server
+   t2.medium                  t2.medium
+   Port 8081                  Port 9000
+          |                         |
+          +------------+------------+
+                       |
+                  Jenkins Server
+                  (if deployed separately)
+```
+
+**Important:** Nexus and SonarQube can consume significant RAM. `t2.medium` has only **4 GiB RAM**, so monitor memory usage and consider a larger instance if you encounter Java out-of-memory or performance issues.
+
+<br>
