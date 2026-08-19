@@ -175,8 +175,6 @@ For the application services, open only the ports actually required, for example
 
 Ideally, restrict **8081** and **9000** to your trusted IP/network rather than opening them to `0.0.0.0/0`.
 
-
-
 #### f. Configure Storage
 
 Set the root EBS volume to at least:
@@ -240,5 +238,3 @@ ssh -i my-key.pem ubuntu@<PUBLIC-IP>
 ```
 
 **Important:** Nexus and SonarQube can consume significant RAM. `t2.medium` has only **4 GiB RAM**, so monitor memory usage and consider a larger instance if you encounter Java out-of-memory or performance issues.
-
-<br>
