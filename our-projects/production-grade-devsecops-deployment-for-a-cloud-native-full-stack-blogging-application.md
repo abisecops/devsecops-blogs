@@ -77,7 +77,7 @@ git clone https://github.com/ougabriel/full-stack-blogging-app.git
 
 This will download the complete source code to your local system and prepare it for the next steps.
 
-#### Steps 1: Set Up the Git Repository and Create a Security Token
+### Steps 1: Set Up the Git Repository and Create a Security Token
 
 #### a. Create the Git Repository
 
