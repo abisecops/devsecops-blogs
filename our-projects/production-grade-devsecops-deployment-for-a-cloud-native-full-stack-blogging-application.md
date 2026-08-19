@@ -2,7 +2,7 @@
 description: >-
   This project implements a production level CI/CD and DevSecOps pipeline for
   deploying a full stack blogging application on AWS EKS using Jenkins, Docker,
-  Nexus, SonarQube, Trivy and Prometheus.This pr
+  Nexus, SonarQube, Trivy and Prometheus.
 ---
 
 # Production Grade DevSecOps Deployment for a Cloud Native Full Stack Blogging Application
@@ -36,9 +36,9 @@ Before starting this project, you should have a basic understanding of the follo
 * **Linux:** Familiarity with basic Linux commands, terminal usage and SSH.
 * **Jenkins, Docker and Kubernetes:** Basic understanding of setup, configuration and usage.
 
-#### Table of Contents
+### Table of Contents
 
-* **Step 1:** Set Up the Git Repository and Create a Security Token
+* #### **Step 1:** Set Up the Git Repository and Create a Security Token
 * **Step 2:** Set Up the Required Servers for Jenkins, SonarQube, Nexus and Monitoring
 * **Step 3:** Configure Jenkins, SonarQube and Nexus
 * **Step 4:** Install Jenkins Plugins and Configure Nexus, Trivy, SonarQube and DockerHub
@@ -46,3 +46,4 @@ Before starting this project, you should have a basic understanding of the follo
 * **Step 6:** Create the AWS EKS Cluster and Install AWS CLI, Kubectl and Terraform
 * **Step 7:** Configure a Custom Domain for the Application
 * **Step 8:** Set Up Application Monitoring with Prometheus, Blackbox Exporter and Grafana
+
