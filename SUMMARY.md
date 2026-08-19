@@ -102,6 +102,8 @@
   * [Day 98: Launch EC2 in Private VPC Subnet Using Terraform](100-days-of-devops/day-98-launch-ec2-in-private-vpc-subnet-using-terraform.md)
   * [Day 99: Attach IAM Policy for DynamoDB Access Using Terraform](100-days-of-devops/day-99-attach-iam-policy-for-dynamodb-access-using-terraform.md)
   * [Day 100: Create and Configure Alarm Using CloudWatch Using Terraform](100-days-of-devops/day-100-create-and-configure-alarm-using-cloudwatch-using-terraform.md)
+* [Our Projects](our-projects/README.md)
+  * [Production Grade DevSecOps Deployment for a Cloud Native Full Stack Blogging Application](our-projects/production-grade-devsecops-deployment-for-a-cloud-native-full-stack-blogging-application.md)
 * [Git](git/README.md)
   * [Set Up Git Repository on Storage Server](git/set-up-git-repository-on-storage-server.md)
   * [Clone Git Repository on Storage Server](git/clone-git-repository-on-storage-server.md)

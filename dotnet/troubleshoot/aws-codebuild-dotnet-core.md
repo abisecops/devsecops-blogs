@@ -8,6 +8,7 @@ layout:
   cover:
     visible: true
     size: hero
+    mask: none
   title:
     visible: true
   description:
@@ -32,13 +33,11 @@ AWS CodeBuild is a fully managed continuous integration service that compiles so
 
 <figure><img src="../../.gitbook/assets/image (151).png" alt=""><figcaption></figcaption></figure>
 
-Steps:&#x20;
+Steps:
 
 ## Create build project
 
 <figure><img src="../../.gitbook/assets/image (152).png" alt=""><figcaption></figcaption></figure>
-
-
 
 Project Name:
 
@@ -56,11 +55,9 @@ Environment:
 
 Buildspec:
 
+<figure><img src="../../.gitbook/assets/image (157).png" alt=""><figcaption></figcaption></figure>
 
-
-<figure><img src="../../.gitbook/assets/image (158).png" alt=""><figcaption></figcaption></figure>
-
-Yaml script:&#x20;
+Yaml script:
 
 ```yaml
 version: 0.2
@@ -80,6 +77,6 @@ Batch Configuration:
 
 <figure><img src="../../.gitbook/assets/image (159).png" alt=""><figcaption></figcaption></figure>
 
-Error found on:&#x20;
+Error found on:
 
 <figure><img src="../../.gitbook/assets/image (160).png" alt=""><figcaption></figcaption></figure>

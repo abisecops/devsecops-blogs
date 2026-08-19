@@ -17,7 +17,7 @@ ssh natasha@ststor01
 {% endstep %}
 
 {% step %}
-### Get sudo access&#x20;
+### Get sudo access
 
 ```
 sudo su -
@@ -41,13 +41,13 @@ git checkout master
 {% endstep %}
 
 {% step %}
-### Create new branch&#x20;
+### Create new branch
 
 ```
 git checkout -b xfusioncorp_ecommerce
 ```
 
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}

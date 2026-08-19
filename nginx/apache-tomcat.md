@@ -1,6 +1,6 @@
 # Apache Tomcat
 
-Today we're going to install and config tomcat.&#x20;
+Today we're going to install and config tomcat.
 
 ```bash
 #!/bin/bash
@@ -74,15 +74,15 @@ sudo systemctl status tomcat
 
 ```
 
-<figure><img src="../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure>
 
-sample.war makes sample folder ultimately when we move the .war file.&#x20;
+sample.war makes sample folder ultimately when we move the .war file.
 
 * You can try any of your war file and browse the path as the given.
 
 <figure><img src="../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
 
-Some resource I used :&#x20;
+Some resource I used :
 
 {% embed url="https://www.ubuntumint.com/install-apache-tomcat-ubuntu/" %}
 

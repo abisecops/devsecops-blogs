@@ -1,6 +1,6 @@
 # Terraform installation
 
-#### Let's install **Terraform** on our ubuntu server:&#x20;
+#### Let's install **Terraform** on our ubuntu server:
 
 <pre class="language-bash"><code class="lang-bash"># Update and install gnupg, software-properties-common
 sudo apt-get update &#x26;&#x26; sudo apt-get install -y gnupg software-properties-common
@@ -20,13 +20,13 @@ sudo apt update -y
 sudo apt-get install terraform -y
 </code></pre>
 
-#### Verify the installation:&#x20;
+#### Verify the installation:
 
 ```sh
  terraform -help
 ```
 
-* We have successfully installed terraform in our system.&#x20;
+* We have successfully installed terraform in our system.
 
 Add any subcommand to `terraform -help` to learn more about **what it does and available options**.
 
@@ -36,7 +36,7 @@ terraform -help plan
 
 #### &#x20;<a href="#enable-tab-completion" id="enable-tab-completion"></a>
 
-#### Enable tab completion :  :thumbsup: <a href="#enable-tab-completion" id="enable-tab-completion"></a>
+#### Enable tab completion : :thumbsup: <a href="#enable-tab-completion" id="enable-tab-completion"></a>
 
 ```bash
 terraform -install-autocomplete
@@ -44,15 +44,15 @@ terraform -install-autocomplete
 
 <figure><img src="../.gitbook/assets/image (181).png" alt=""><figcaption></figcaption></figure>
 
-* Terraform has .tf extension file.&#x20;
+* Terraform has .tf extension file.
 
-a) Create a file main.tf then:&#x20;
+a) Create a file main.tf then:
 
 ```bash
 terraform init
 ```
 
-b) Format and validate the configuration:&#x20;
+b) Format and validate the configuration:
 
 ```bash
 terraform fmt #format
@@ -62,7 +62,7 @@ terraform fmt #format
 terraform validate #validate
 ```
 
-c) Then check the plan:&#x20;
+c) Then check the plan:
 
 ```bash
 terraform plan
@@ -77,7 +77,6 @@ terraform apply
 
 * Now check to the website. I installed nginx here.
 
-<figure><img src="../.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
 
-* &#x20;If you also wanna try, check [install-jenkins-docker-image-with-terraform.md](install-jenkins-docker-image-with-terraform.md "mention")
-
+* If you also wanna try, check [install-jenkins-docker-image-with-terraform.md](install-jenkins-docker-image-with-terraform.md "mention")

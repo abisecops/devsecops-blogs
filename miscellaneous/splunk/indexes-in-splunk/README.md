@@ -24,7 +24,7 @@ Understanding and efficiently managing indexes ensures optimal data handling wit
 
 <figure><img src="../../../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
 
-Still issue on searching. Wait let's fix this first.&#x20;
+Still issue on searching. Wait let's fix this first.
 
 Adjust Splunk's Minimum Free Space Requirement
 
@@ -56,9 +56,6 @@ It's should work now. Please wait for a while and try a sample search index.
 index="_internal"
 ```
 
-
-
-<figure><img src="../../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
 
 Waah! It's working now. Cool, we can move forward to our Splunk learning.
-

@@ -1,6 +1,6 @@
 # Install jenkins docker image with Terraform
 
-#### Today we are going to install jenkins docker image with the help of terraform. Let's do it:&#x20;
+#### Today we are going to install jenkins docker image with the help of terraform. Let's do it:
 
 ```
 mkdir learn-terraform-docker-container
@@ -8,7 +8,7 @@ cd mkdir learn-terraform-docker-container
 sudo nano main.tf
 ```
 
-#### Let's create a terraform file to create the docker image of jenkins: <br>
+#### Let's create a terraform file to create the docker image of jenkins:<br>
 
 ```bash
 sudo nano main.tf
@@ -42,7 +42,7 @@ resource "docker_container" "jenkins" {
 
 <figure><img src="../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
 
-#### Now, init the terraform:&#x20;
+#### Now, init the terraform:
 
 ```bash
 terraform init
@@ -73,14 +73,14 @@ terraform apply
 
 <figure><img src="../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
 
-* Prompt **yes** only your configuration is correct: <br>
+* Prompt **yes** only your configuration is correct:<br>
 
 <figure><img src="../.gitbook/assets/image (92).png" alt=""><figcaption></figcaption></figure>
 
 * If you're using localhost, you can try: [http://localhost:8080](http://localhost:8080)
 * Otherwise you can also try ngrok as I already mention on the [terraform-installation.md](terraform-installation.md "mention")
 
-#### Tmux will be more helpful to you for testing:&#x20;
+#### Tmux will be more helpful to you for testing:
 
 ```bash
 tmux -s new jenkins
@@ -94,13 +94,13 @@ ngrok http 8080
 tmux attach -t jenkins # to attach the session
 ```
 
-Your session will run on background.&#x20;
+Your session will run on background.
 
-Now access the public URL and here it goes:&#x20;
+Now access the public URL and here it goes:
 
-<figure><img src="../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (93).png" alt=""><figcaption></figcaption></figure>
 
-Now, get the password; In my case:&#x20;
+Now, get the password; In my case:
 
 ```bash
 docker ps
@@ -111,6 +111,6 @@ cat /var/jenkins_home/secrets/initialAdminPassword
 
 <figure><img src="../.gitbook/assets/image (182).png" alt=""><figcaption></figcaption></figure>
 
-Login this admin credentials:&#x20;
+Login this admin credentials:
 
 <figure><img src="../.gitbook/assets/image (183).png" alt=""><figcaption></figcaption></figure>

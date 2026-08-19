@@ -4,9 +4,9 @@ description: 'SSL certificate  on : dashboardapi.hicare.in'
 
 # Issuing SSL Certificate
 
-#### Steps:&#x20;
+#### Steps:
 
-1. Use the given command on linux server:&#x20;
+1. Use the given command on linux server:
 
 ```bash
 openssl req -new -newkey rsa:2048 -nodes -keyout dashboardapi_hicare_in.pem -out dashboardapi_hicare_in.csr -subj /CN=dashboardapi.hicare.in; cat dashboardapi_hicare_in.csr
@@ -32,7 +32,7 @@ cd dashboardapi.hicare.in_cert
 sudo cp -r * /etc/ssl/
 ```
 
-6. Now go to the path: **/etc/ssl/ :**&#x20;
+6. Now go to the path: **/etc/ssl/ :**
 
 ```bash
 cd /etc/ssl/
@@ -108,7 +108,7 @@ ssl_stapling_verify on;
 
 ```
 
-8. Changes here in configuration:&#x20;
+8. Changes here in configuration:
 
 ```bash
     listen        443 ssl;
@@ -130,6 +130,6 @@ sudo nginx -s reload
 sudo systemctl restart nginx
 ```
 
-<figure><img src="../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (118).png" alt=""><figcaption></figcaption></figure>
 
 #### :tada: Congrats, your website is hosted on [dashboardapi.hicare.in](https://dashboardapi.hicare.in/) and auto redirected (HTTP to HTTPS) with SSL Certificate.

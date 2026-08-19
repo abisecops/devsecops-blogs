@@ -10,7 +10,7 @@ sudo apt install ansible -y
 
 <figure><img src="../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
-Create ssh-keygen with&#x20;
+Create ssh-keygen with
 
 ```bash
 ssh-keygen -t rsa -b 2048
@@ -32,10 +32,9 @@ Paste the given keys to authorized\_keys of wazuh agent server.
 nano ~/.ssh/authorized_keys
 ```
 
-<figure><img src="../../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
 
 ```
 ansible all -i inventory/hosts -m ping
 
 ```
-
